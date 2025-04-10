@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | From Jech! &copy;</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="site-icon.ico">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+
+            <ul class="navbar-links desktop-left">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+            </ul>
+    
+            <a href="index.html" class="navbar-logo">
+                <img src="images/brand-logo.png" alt="From Jech Logo">
+            </a>
+    
+            <!-- Desktop right links (hidden on mobile) -->
+            <ul class="navbar-links desktop-right">
+                <li><a href="about.html">About</a></li>
+                <li><a href="contacts.html" class="active-link" style="color:#ff55ad;">Contact</a></li>             
+            </ul>
+    
+            <!-- Mobile menu button -->
+            <button class="navbar-toggler" aria-label="Toggle navigation">
+                <span class="toggler-bar"></span>
+                <span class="toggler-bar"></span>
+                <span class="toggler-bar"></span>
+            </button>
+        </div>
+
+        <!-- Mobile menu (hidden on desktop) -->
+        <div class="mobile-menu">
+            <ul class="mobile-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contacts.html" class="active-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="bottom-nav">
+        <div class="navbar-containerb">
+            <a href="cart.html" class="navbar-logo">
+                <img src="images/cart.png" alt="From Jech Logo">
+            </a>
+        </div>
+    </nav>
+
+    <main class="contact-main">
+        <section class="contact-hero">
+            <div class="contact-hero-content">
+                <h1>GET IN TOUCH</h1>
+                <p>We'd love to hear from you! Reach out for inquiries, collaborations, or just to say hello.</p>
+            </div>
+        </section>
+
+        <div class="contact-container">
+            <section class="contact-info">
+                <div class="contact-methods">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>EMAIL US</h3>
+                        <p>hello@fromjech.com</p>
+                        <a href="mailto:hello@fromjech.com" class="contact-link">Send Message</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <h3>CALL US</h3>
+                        <p>+63 912 345 6789</p>
+                        <a href="tel:+639123456789" class="contact-link">Call Now</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>VISIT US</h3>
+                        <p>123 Fashion Street<br>Manila, Philippines</p>
+                        <a href="https://maps.google.com" target="_blank" class="contact-link">Get Directions</a>
+                    </div>
+                </div>
+
+                <div class="contact-social">
+                    <h3>FOLLOW US ON:</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-form-section">
+                <h2>SEND US A MESSAGE</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="simple-footer">
+        <div class="footer-content" style="text-align: center;">
+            <img src="images/brand-logo-white.png" alt="From Jech Logo" class="footer-logoA" style="display: block; margin: 0 auto;">
+            <p>&copy; 2025 From Jech. All rights reserved.</p>
+            <div class="legal-links" style="display: flex; justify-content: center; gap: 1.5rem;">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Navbar functionality
+            const toggler = document.querySelector('.navbar-toggler');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const navbar = document.querySelector('.navbar');
+
+            toggler.addEventListener('click', function() {
+                this.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+                document.body.classList.toggle('no-scroll');
+            });
+
+            document.querySelectorAll('.mobile-links a').forEach(link => {
+                link.addEventListener('click', function() {
+                    toggler.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                    document.body.classList.remove('no-scroll');
+                });
+            });
+
+            window.addEventListener('scroll', function() {
+                navbar.classList.toggle('scrolled', window.scrollY > 10);
+            });
+        });
+    </script>
+
+</body>
+</html> 

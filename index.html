@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Jech! &copy; - HOME</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="site-icon.ico">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <!-- Desktop left links (hidden on mobile) -->
+            <ul class="navbar-links desktop-left">
+                <li><a href="index.html" class="active-link" style="color:#ff55ad;" >Home</a></li>
+                <li><a href="products.html">Products</a></li>
+            </ul>
+    
+            <a href="index.html" class="navbar-logo">
+                <img src="images/brand-logo.png" alt="From Jech Logo">
+            </a>
+    
+            <!-- Desktop right links (hidden on mobile) -->
+            <ul class="navbar-links desktop-right">
+                <li><a href="about.html">About</a></li>
+                <li><a href="contacts.html">Contact</a></li>             
+            </ul>
+    
+            <!-- Mobile menu button -->
+            <button class="navbar-toggler" aria-label="Toggle navigation">
+                <span class="toggler-bar"></span>
+                <span class="toggler-bar"></span>
+                <span class="toggler-bar"></span>
+            </button>
+        </div>
+
+        <!-- Mobile menu (hidden on desktop) -->
+        <div class="mobile-menu">
+            <ul class="mobile-links">
+                <li><a href="index.html" class="active-link">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="bottom-nav">
+        <div class="navbar-containerb">
+            <a href="cart.html" class="navbar-logo">
+                <img src="images/cart.png" alt="From Jech Logo">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Slideshow Section -->
+    <section class="hero-slideshow">
+        <div class="hero-slide active" style="background-image: url('images/cover3.jpg')"></div>
+        <div class="hero-slide" style="background-image: url('images/cover5.jpg')"></div>
+        <div class="hero-slide" style="background-image: url('images/cover4.jpg')"></div>
+        <div class="hero-slide" style="background-image: url('images/cover7.jpg')"></div>
+        <div class="hero-slide" style="background-image: url('images/cover.jpg')"></div>
+    </section>
+
+    <main class="main-content">
+        <div class="collection-title">
+            <h1>APRIL '25 NEW ARRIVALS</h1>
+        </div>
+    
+        <div class="product-grid">
+            <div class="product-container">
+
+                <article class="product-card" data-category="hoodies">
+                    <a href="#product-2" class="product-image-link">
+                    <img src="images/2.png" alt="Washed Denim Cardigan">
+                    </a>
+                    <h3>Washed Denim Cardigan</h3>
+                    <p>P699.00</p>
+                    <a href="#product-2" class="product-button">View</a>
+                </article>
+                
+                <div id="product-2" class="product-modal">
+                    <div class="modal-content">
+                    <a href="#" class="close-modal">&times;</a>
+                    <img src="images/2.png" alt="Washed Denim Cardigan">
+                    <div class="product-details">
+                        <h3>Washed Denim Cardigan</h3>
+                        <p class="price">P699.00</p>
+                        <p class="description">A denim-inspired cardigan with a modern wash and soft lining. Perfect for layering.</p>
+                        <div class="sizes">
+                        <span>S</span>
+                        <span>M</span>
+                        <span>L</span>
+                        <span>XL</span>
+                        </div>
+                        <button class="product-button">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>      
+                
+                <article class="product-card" data-category="hoodies">
+                    <a href="#product-3" class="product-image-link">
+                    <img src="images/3.png" alt="Wool Polly-Cardigan">
+                    </a>
+                    <h3>Wool Polly-Cardigan</h3>
+                    <p>P699.00</p>
+                    <a href="#product-3" class="product-button">View</a>
+                </article>
+                
+                <div id="product-3" class="product-modal">
+                    <div class="modal-content">
+                    <a href="#" class="close-modal">&times;</a>
+                    <img src="images/3.png" alt="Wool Polly-Cardigan">
+                    <div class="product-details">
+                        <h3>Wool Polly-Cardigan</h3>
+                        <p class="price">P699.00</p>
+                        <p class="description">Soft wool blend cardigan for warmth and timeless style. Lightweight and cozy.</p>
+                        <div class="sizes">
+                        <span>S</span>
+                        <span>M</span>
+                        <span>L</span>
+                        <span>XL</span>
+                        </div>
+                        <button class="product-button">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+
+                <article class="product-card" data-category="accessories">
+                    <a href="#product-27" class="product-image-link">
+                    <img src="images/27.png" alt="Birdie Play Bracelet">
+                    </a>
+                    <h3>Birdie Play Bracelet</h3>
+                    <p>P1,099.00</p>
+                    <a href="#product-27" class="product-button">View</a>
+                </article>
+                
+                <div id="product-27" class="product-modal">
+                    <div class="modal-content">
+                    <a href="#" class="close-modal">&times;</a>
+                    <img src="images/27.png" alt="Birdie Play Bracelet">
+                    <div class="product-details">
+                        <h3>Birdie Play Bracelet</h3>
+                        <p class="price">P1,099.00</p>
+                        <p class="description">Chic and sporty bracelet made to flex your golf style on and off the course.</p>
+                        <div class="sizes"><span>One Size</span></div>
+                        <button class="product-button">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="hero hero-secondary"></section>
+    
+    <main class="main-content">
+        <div class="collection-title">
+            <h1>SHOP 50% OFF</h1>
+        </div>
+    
+        <div class="product-grid">
+            <div class="product-container">
+                <article class="product-card" data-category="hoodies">
+                    <a href="#product-1" class="product-image-link">
+                    <img src="images/1.png" alt="Bonham 31' Classic Cardigan">
+                    </a>
+                    <h3>Bonham 31' Classic Cardigan</h3>
+                    <p>P699.00</p>
+                    <a href="#product-1" class="product-button">View</a>
+                </article>
+                
+                <div id="product-1" class="product-modal">
+                    <div class="modal-content">
+                    <a href="#" class="close-modal">&times;</a>
+                    <img src="images/1.png" alt="Bonham 31' Classic Cardigan">
+                    <div class="product-details">
+                        <h3>Bonham 31' Classic Cardigan</h3>
+                        <p class="price">P699.00</p>
+                        <p class="description">Premium cotton tee with vintage golf-inspired print. Relaxed fit.</p>
+                        <div class="sizes">
+                        <span>S</span>
+                        <span>M</span>
+                        <span>L</span>
+                        <span>XL</span>
+                        </div>
+                        <button class="product-button">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+
+                <article class="product-card" data-category="shirts">
+                    <a href="#product-31" class="product-image-link">
+                      <img src="images/24.png" alt="Caddy Stripe in Yellow">
+                    </a>
+                    <h3>Caddy Stripe in Yellow</h3>
+                    <p>P1,199.00</p>
+                    <a href="#product-31" class="product-button">View</a>
+                  </article>
+                  
+                  <div id="product-31" class="product-modal">
+                    <div class="modal-content">
+                      <a href="#" class="close-modal">&times;</a>
+                      <img src="images/24.png" alt="Caddy Stripe in Yellow">
+                      <div class="product-details">
+                        <h3>Caddy Stripe in Yellow</h3>
+                        <p class="price">P1,199.00</p>
+                        <p class="description">A bright, breathable stripe polo perfect for sunny tee times or casual days.</p>
+                        <div class="sizes">
+                          <span>S</span>
+                          <span>M</span>
+                          <span>L</span>
+                          <span>XL</span>
+                        </div>
+                        <button class="product-button">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="hero hero-third"></section>
+
+    <main class="main-content">
+        <div class="collection-title">
+            <h1>CLEARANCE</h1>
+        </div>
+    
+        <div class="product-grid">
+            <div class="product-container">
+                <article class="product-card">
+                    <img src="images/5.png" alt="Hyper-Barber Polo">
+                    <h3>Hyper-Barber Polo</h3>
+                    <p>P699.00</p>
+                    <button class="product-button">Add to Cart</button>
+                </article>
+                
+                <div id="product-5" class="product-modal">
+                    <div class="modal-content">
+                        <a href="#" class="close-modal">&times;</a>
+                        <img src="images/5.png" alt="Hyper-Barber Polo">
+                        <div class="product-details">
+                            <h3>Hyper-Barber Polo</h3>
+                            <p class="price">P699.00</p>
+                            <p class="description">Premium cotton cardigan with a relaxed fit. Ideal for layering or casual wear. Breathable, soft-touch fabric for all-day comfort.</p>
+                            <div class="sizes"><span>One Size</span></div>
+                            <button class="product-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <article class="product-card" data-category="hoodies">
+                    <a href="#product-9" class="product-image-link">
+                    <img src="images/9.png" alt="Save the Bees Hoodie">
+                    </a>
+                    <h3>Save the Bees Hoodie</h3>
+                    <p>P899.00</p>
+                    <a href="#product-9" class="product-button">View</a>
+                </article>
+                
+                <div id="product-9" class="product-modal">
+                    <div class="modal-content">
+                    <a href="#" class="close-modal">&times;</a>
+                    <img src="images/9.png" alt="Save the Bees Hoodie">
+                    <div class="product-details">
+                        <h3>Save the Bees Hoodie</h3>
+                        <p class="price">P899.00</p>
+                        <p class="description">Support the cause in style. Eco-conscious hoodie featuring bee-themed artwork.</p>
+                        <div class="sizes"><span>S</span><span>M</span><span>L</span><span>XL</span></div>
+                        <button class="product-button">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="hero hero-fourth"></section>
+    <div class="view-all-container">
+         <a href="products.html"><button class="view-all-button">View All Products</button></a>
+    </div>
+    
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/brand-logo-white.png" alt="Radical Logo">
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Hoodies</a></li>
+                        <li><a href="#">Cardigans</a></li>
+                        <li><a href="#">Slip-Ons</a></li>
+                        <li><a href="#">View All Products</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+                
+                <div class="newsletter">
+                    <h4>Newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 From Jech. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Navbar functionality
+            const toggler = document.querySelector('.navbar-toggler');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const navbar = document.querySelector('.navbar');
+
+            toggler.addEventListener('click', function() {
+                this.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+                document.body.classList.toggle('no-scroll');
+            });
+
+            document.querySelectorAll('.mobile-links a').forEach(link => {
+                link.addEventListener('click', function() {
+                    toggler.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                    document.body.classList.remove('no-scroll');
+                });
+            });
+
+            window.addEventListener('scroll', function() {
+                navbar.classList.toggle('scrolled', window.scrollY > 10);
+            });
+
+            // Hero Slideshow functionality
+            const slides = document.querySelectorAll('.hero-slide');
+            let currentSlide = 0;
+            const slideInterval = 5000; // Change image every 5 seconds
+
+            function nextSlide() {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add('active');
+            }
+
+            // Start the slideshow
+            let slideShow = setInterval(nextSlide, slideInterval);
+
+            // Pause slideshow when hovering
+            const slideshowContainer = document.querySelector('.hero-slideshow');
+            slideshowContainer.addEventListener('mouseenter', () => {
+                clearInterval(slideShow);
+            });
+
+            slideshowContainer.addEventListener('mouseleave', () => {
+                slideShow = setInterval(nextSlide, slideInterval);
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+        const slides = document.querySelectorAll('.hero-slide');
+        let currentSlide = 0;
+        
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[index].classList.add('active');
+        }
+        
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+        
+        setInterval(nextSlide, 3000); // Changes every 3s (was 5s)
+        showSlide(0); // Initialize
+        });
+    </script>
+</body>
+</html>
